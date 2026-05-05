@@ -9,13 +9,12 @@ public static class DataSeeder
     {
         var avtor = new Avtor
         {
-            Name = "Stephen King",
-            Surname = "sdasd"
+            Name = "I"
         };
 
         var ganr = new Ganr
         {
-            Name = "Horror"
+            Name = "Horror/Romantic/Fantasy"
         };
 
         var publisher = new Publisher
@@ -31,13 +30,15 @@ public static class DataSeeder
 
         var book = new Book
         {
-            Title = "IT",
-            Pages = 500,
-            Year = 1986,
+            Id = 9,
+            Title = "You.Me.Shadow",
+            Pages = 540,
+            Year = 2026,
 
-            CostPrice = 100,
-            SellPrice = 200,
-            Quantity = 5,
+            CostPrice = 8,
+            SellPrice = 8,
+            Quantity = 1,
+
 
             AvtorId = avtor.Id,
             GanrId = ganr.Id,

@@ -5,6 +5,7 @@ using System.Collections;
 using System.Text;
 using System.Reflection.PortableExecutable;
 using System;
+using ExamShopEF.Services;
 
 namespace ExamShopEF
 {
@@ -17,14 +18,18 @@ namespace ExamShopEF
 
             AppDbContext context = new AppDbContext();
             BookService bookServces = new BookService();
-
+            ShopService shopService = new ShopService();
+            
             using (var db = new AppDbContext())
             {
                 DataSeeder.Seed(db);
             }
             var service = new BookService();
 
+
             bookServces.AddBook(context);
+            shopService.coutAllBooks(context);
+
         }
     }
 }

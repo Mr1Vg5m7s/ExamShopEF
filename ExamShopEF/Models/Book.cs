@@ -18,14 +18,18 @@ namespace ExamShopEF.Models
 
         public int Quantity { get; set; }
 
+
         //////////////////////////////////////////////
         public int AvtorId { get; set; }
         public Avtor Avtor { get; set; }
-
+        
         public int GanrId { get; set; }
         public Ganr Ganr { get; set; }
 
         public int PublisherId { get; set; }
         public Publisher Publisher { get; set; }
+        public int? PromotionId { get; set; }
+
+
     }
 }

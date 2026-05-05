@@ -9,6 +9,7 @@ public class AppDbContext : DbContext
     public DbSet<Ganr> Ganrs { get; set; }
     public DbSet<Publisher> Publishers { get; set; }
 
+
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
