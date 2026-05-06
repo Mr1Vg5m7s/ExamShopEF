@@ -25,8 +25,11 @@ public class BookService
         Console.Write("Жанр: ");
         string ganrName = Console.ReadLine();
 
-        Console.WriteLine("Издательство: ");
+        Console.Write("Издательство: ");
         string publisherName = Console.ReadLine();
+
+        Console.Write("Количество: ");
+        string quant = Console.ReadLine();
 
 
         ///
@@ -83,7 +86,7 @@ public class BookService
             Title = title,
             Pages = int.Parse(pages),
             Year = int.Parse(year),
-            Quantity = 1,
+            Quantity = int.Parse(quant),
             CostPrice = int.Parse(costprice),
             SellPrice = int.Parse(sellprice),
 

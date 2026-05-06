@@ -16,7 +16,7 @@ namespace ExamShopEF.Services
                 Console.WriteLine("Список всех книг:");
                 foreach (var book in books)
                 {
-                    Console.WriteLine($"ID: {book.Id}, Название: {book.Title}, Автор: {book.Avtor.Name} , Жанр: {book.Ganr.Name}, Издатель: {book.Publisher.Name}, Цена: {book.SellPrice}");
+                    Console.WriteLine($"ID: {book.Id}, Название: {book.Title}, Автор: {book.Avtor.Name} , Жанр: {book.Ganr.Name}, Издатель: {book.Publisher.Name}, Цена: {book.SellPrice}, Количеств: {book.Quantity}");
                 }
             }
             else

@@ -18,17 +18,23 @@ namespace ExamShopEF
 
             AppDbContext context = new AppDbContext();
             BookService bookServces = new BookService();
-            ShopService shopService = new ShopService();
+            ShopService shopServces = new ShopService();
+
             
+
+            var service = new BookService();
+
             using (var db = new AppDbContext())
             {
                 DataSeeder.Seed(db);
+                var menu = new Menu();
+                menu.Start(db);
             }
-            var service = new BookService();
 
 
+            /*
             bookServces.AddBook(context);
-            shopService.coutAllBooks(context);
+            shopServces.coutAllBooks(context);*/
 
         }
     }
