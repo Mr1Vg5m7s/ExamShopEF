@@ -7,7 +7,7 @@ namespace ExamShopEF.Services
 {
     public class ShopService
     {
-        //моя
+        ////////////////////////////////////////////////////////
         public void coutAllBooks(AppDbContext db)
         {
             var books = db.Books.ToList();
